@@ -1,0 +1,32 @@
+﻿//@import '../lib/bootstrap/stylesheets/bootstrap';
+
+.help-block{
+	&.error{
+		color: #a94442;
+	}
+	&.success{
+		color: #379c3b;
+	}
+}
+
+
+//.col-with-sidebtn{ padding-right: 0;}
+.col-with-sidebtn{
+	$_w: $col-bt-w + 10;
+	width: calc(100% - #{$_w});
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 10px
+}
+
+.col-bt{ 
+	padding-left: 0; 
+	padding-right: 0; 
+	max-width: $col-bt-w;
+}
+
+
+//colocar no generic(?) botao das acoes dos formulario (proximo passo)
+.btn-act{ margin-top: 20px;}
+
+.btn-sideinput{ width: 71px; height: $input-height-base; padding-top: 10px;}

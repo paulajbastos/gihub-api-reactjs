@@ -1,0 +1,86 @@
+﻿.wrapper{
+	&.table{ 
+		min-height: 100vh;
+		.col-table{
+		    &.-left{ 
+		        min-height: 100vh;
+		        background: $blue_dark;
+		    }
+
+		    &.-right{ 
+		        background: white;
+		        min-height: 100vh;
+		        padding: 20px;
+		    }
+		}
+	}
+}
+
+
+.wrapper{
+	.-left{
+		h1{ border-bottom: solid 1px $blue_lighter;}
+		.loader{
+			position: relative;
+			margin-top: 70px;
+		}
+	}
+
+	.-right{
+		.loader{
+			position: relative;
+			margin: 70px 0;
+		}
+		h1{ border-bottom: solid 1px $blue_lighter;}
+		
+	}
+}
+/* Sidebar */
+.navigation{
+	margin-top: 10px;
+	.item{	
+		border-bottom: solid 1px $blue_lighter;
+		padding: 10px;
+		>a{
+
+		}
+	}
+}
+
+.repo-content{
+	>h1{
+		margin-bottom: 20px;
+	}
+	.stars{
+		
+	}
+	.forks{
+		margin-left: 15px;
+	}
+
+	.commits-wrap{
+
+		>.title{
+			margin:40px 0 10px 0;
+			font-size: 16px;
+
+		}
+		.commit-content{
+			.commit-list{
+				min-height: 1px;
+				@include transition-default();
+				.item{
+					border: solid 1px $gray_light;
+					margin: 20px 0;
+					padding: 20px;
+					.title{
+
+					}
+					.desc{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+﻿/* Basic configurations */
+
+//
+// Variables
+// -------------------------------------------------- 
+	
+//Font Paths
+$fonts_path: "fonts/" !default;
+$fa-font-path: "fonts/" !default;
+
+/* Layout */
+$containerW: 1200px;
+$containerPad: 10px;
+$padd_bottom_contents: 90px;
+$col-bt-w: 71px;
+
+/* Colors */
+
+	
+$blue_dark: #1e8cd6;
+$blue_default: #3a48a9;
+$gray_default: #f2f2f2;
+$gray_light: #efefe2;
+$gray_text: #888888;
+$gray1: #56565c;
+$green: #63ae5d;
+$green_light: #bdcaae;
+$red: #a94442;
+
+$blue_light: #1d9495;
+$blue_lighter: #37a0e6;
+$border_bottom: #100932;
+
+$color-head-deslogado: $blue_default;
+$color-head-dashboard: $gray_default;
+
+$brand-color: white;
+
+
+/* Buttons */
+$btn-padding: 20px;
+
+/* Fonts */
+$font-dark: black;
+$font-light: white;

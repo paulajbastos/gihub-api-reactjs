@@ -1,0 +1,22 @@
+﻿
+@media (max-width: 1024px){
+	.pedidos{
+		.header{
+			.title{ margin: 10px 0;}
+			.filters{ float: none;}
+		}
+	}
+
+	.sidebar{
+		.bts-calltoact{
+			.call-criar{
+				float:left;
+			}
+		}
+		.feedback-interaction{
+			.item{
+				float:left;
+			}
+		}
+	}
+}

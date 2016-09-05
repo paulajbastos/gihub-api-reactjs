@@ -21505,10 +21505,36 @@
 		_react2.default.createElement(
 			_reactRouter.Route,
 			{ component: _mainLayout2.default },
-			_react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: '/:name', component: _repoItem2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'gihub-api-reactjs', component: _Home2.default }),
+			_react2.default.createElement(
+				_reactRouter.Route,
+				{ path: 'gihub-api-reactjs' },
+				_react2.default.createElement(_reactRouter.Route, { path: ':name', component: _repoItem2.default })
+			)
 		)
 	);
+
+	/*
+	DEV:
+
+	OPT1
+	<Route path="/" component={Home} />
+	<Route path="repo">
+		<Route path=":name" component={RepoItem} />
+	</Route>
+
+	OPT2
+	<Route path="/" component={Home} />
+	<Route path="/:name" component={RepoItem} />
+
+	AR:
+
+	<Route path="gihub-api-reactjs" component={Home} />
+	<Route path="gihub-api-reactjs">
+		<Route path=":name" component={RepoItem} />
+	</Route>
+	*/
+
 
 	// Layouts
 
@@ -30485,7 +30511,7 @@
 						{ key: key, className: 'item' },
 						_react2.default.createElement(
 							_reactRouter.Link,
-							{ to: '/' + repo.name, className: '-font-light', title: repo.name },
+							{ to: '/gihub-api-reactjs/' + repo.name, className: '-font-light', title: repo.name },
 							repo.name
 						)
 					);
@@ -30507,6 +30533,14 @@
 	};
 
 	exports.default = RepoList;
+
+	/*
+	DEV
+	<div key={key} className="item"><Link to={`/${repo.name}`} className="-font-light" title={repo.name}>{repo.name}</Link></div>
+
+	AR
+	<div key={key} className="item"><Link to={`/gihub-api-reactjs/${repo.name}`} className="-font-light" title={repo.name}>{repo.name}</Link></div>
+	*/
 
 /***/ },
 /* 273 */
@@ -30863,7 +30897,11 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: '-font-sm float-right' },
-	                    'git@github.com:paulajbastos/gihub-api-reactjs.git'
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://br.linkedin.com/in/paula-junqueira-bastos-82b89118', target: '_blank', className: '-font-blue-dark' },
+	                        'Meu linkedin'
+	                    )
 	                )
 	            )
 	        );

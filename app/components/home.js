@@ -7,7 +7,7 @@ const Home = React.createClass({
         	<div>
 	        	<header className="-font-dark clearfix">
 	            	<div className="float-left">Desafio Front-End.</div>
-	            	<div className="-font-sm float-right">git@github.com:paulajbastos/gihub-api-reactjs.git</div>
+	            	<div className="-font-sm float-right"><a href="https://br.linkedin.com/in/paula-junqueira-bastos-82b89118" target="_blank" className="-font-blue-dark">Meu linkedin</a></div>
 	           	</header>          	
 	        </div>
         );

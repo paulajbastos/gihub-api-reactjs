@@ -10,6 +10,6 @@ For Js Task Runners
 Run:
 webpack -w
 
-For Css Task Runners
+For Css Task Runners (must install sass before)
 Run:
 grunt
